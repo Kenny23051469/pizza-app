@@ -52,14 +52,6 @@ function Footer() {
     )
 }
 
-function Footer() {
-    return (
-        <div className="footer">
-            <footer>{isOpen ? "We're currently open" : "Sorry we're closed"}</footer>
-        </div>
-    )
-}
-
 function Pizza({ name, ingredients, price, photoName, isSoldOut }) {
     return (
         <div className={`pizza ${isSoldOut ? "sold-out" : ""}`}>
