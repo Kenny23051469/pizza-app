@@ -27,7 +27,7 @@ function Menu() {
                         ingredients={pizza.ingredients}
                         price={pizza.price}
                         photoName={pizza.photoName}
-                        isSoldOut={pizza.isSoldOut}
+                        isSoldOut={pizza.soldOut}
                     />
                 ))}
             </div>
@@ -52,9 +52,9 @@ function Footer() {
     )
 }
 
-function Pizza({ name, ingredients, price, photoName, isSoldOut }) {
+function Pizza({ name, ingredients, price, photoName, soldOut }) {
     return (
-        <div className={`pizza ${isSoldOut ? "sold-out" : ""}`}>
+        <div className="pizza">
                 <img src={photoName} alt={name} />
                 <div>
                     <h3>{name}</h3>
