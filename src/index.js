@@ -56,7 +56,6 @@ function Footer() {
     return (
         <div className="footer">
             <footer>{isOpen ? "We're currently open" : "Sorry we're closed"}</footer>
-            <button>{isOpen ? "Order" : }</button>
         </div>
     )
 }
